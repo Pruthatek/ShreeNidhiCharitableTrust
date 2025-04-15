@@ -97,7 +97,7 @@ const Publication = () => {
                   spaceBetween: 10,
                 },
               }}
-            // autoplay={{ delay: 1500, disableOnInteraction: false }}
+            autoplay={{ delay: 1500, disableOnInteraction: false }}
             // pagination={{ clickable: true }}
            
             className='mySwiper '
