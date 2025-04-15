@@ -289,15 +289,15 @@ const Footer = () => {
 
 
 
-</div>
+        </div>
       
     </div>
 
     <div className='w-full xl:h-[60px] py-4 bg-white flex xl:flex-row flex-col gap-y-4 justify-between items-center px-5 xl:px-14'>
 
-        <p className='font-normal text-[16px] font-poppins text-[#1C1C1C] '>© {currentYear} All Rights Reserved SHREE NIDHI CHARITABLE TRUST</p>
-        <p className='font-normal text-[16px] font-poppins text-[#1C1C1C] '>Designed and Developed by PRUTHATEK</p>
-        <p className='font-normal text-[16px] font-poppins text-[#1C1C1C] '>Privacy Policy | Copyright | Terms of Use</p>
+        <p className='font-normal md:text-[16px] text-[12px] font-poppins text-[#1C1C1C] '>© {currentYear} All Rights Reserved SHREE NIDHI CHARITABLE TRUST</p>
+        <p className='font-normal md:text-[16px] text-[12px] font-poppins text-[#1C1C1C] '>Designed and Developed by <a href="https://pruthatek.com/" target="_blank" className='underline' >PRUTHATEK</a></p>
+        <p className='font-normal md:text-[16px] text-[12px] font-poppins text-[#1C1C1C] '>Privacy Policy | Copyright | Terms of Use</p>
 
     </div>
     </>

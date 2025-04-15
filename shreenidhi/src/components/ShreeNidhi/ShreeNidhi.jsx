@@ -34,7 +34,7 @@ const ShreeNidhi = () => {
             modules={[Pagination, A11y, EffectFade, Autoplay, EffectCoverflow]}
             loop={true}
             slidesPerView={1}
-            // autoplay={{ delay: 1500, disableOnInteraction: false }}
+            autoplay={{ delay: 1500, disableOnInteraction: false }}
             pagination={{ clickable: true }}
            
             className='mySwiper w-[90%]'

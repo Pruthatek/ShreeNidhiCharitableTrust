@@ -95,7 +95,7 @@ const Navbar = () => {
     <div className="lg:fixed lg:block hidden top-0 left-0 w-full z-50 font-poppins">
 
         <div className="relative">
-          <Link to="/">         
+          <Link to="/" onClick={handleClick}>         
           <div className="absolute z-50 w-[190px] h-[186px] bg-white shadow-lg left-14 rounded-b-[20px] flex justify-center items-center">
             <img src="/assets/Logo.svg" />
           </div>
@@ -127,16 +127,16 @@ const Navbar = () => {
 
     <div className='fixed lg:hidden bg-white shadow-md h-[90px] px-5 top-0 left-0 w-screen flex justify-between items-center z-50 font-poppins'>
        
-    <Link to="/">
+    <Link to="/" onClick={handleClick}>
        <img src="/assets/Logo.svg" className='w-[65px] h-[65px] '/>
    </Link>
        <div className='flex gap-x-5 items-center '>
 
-        <Link to="/achievements">
+        <Link to="/achievements" onClick={handleClick}>
         <p className=' font-normal text-[14px]  font-poppins text-[#101010] ' >Achievements</p>
         </Link>
 
-        <Link to="/contact-us">
+        <Link to="/contact-us" onClick={handleClick}>
         <p className=' font-normal text-[14px]  font-poppins text-[#101010] ' >Contact</p>
         </Link>
 

@@ -38,7 +38,7 @@ const Hero = () => {
                   animate={{ opacity: 1 }}
                   exit={{ opacity: 0 }}
                   transition={{ duration: 0.6 }}
-                  className='uppercase outlined-text font-extrabold md:text-[30px] text-[24px] text-[#A3364E]'
+                  className='uppercase font-extrabold md:text-[30px] text-[24px] text-[#A3364E]'
                 >
                   {names[activeIndex]}
                 </motion.p>
@@ -50,7 +50,7 @@ const Hero = () => {
             modules={[Pagination, A11y, EffectFade, Autoplay]}
             spaceBetween={50}
             slidesPerView={1}
-            // autoplay={{ delay: 3000, disableOnInteraction: false }}
+            autoplay={{ delay: 3000, disableOnInteraction: false }}
             pagination={{ clickable: true }}
             onSlideChange={(swiper) => setActiveIndex(swiper.activeIndex)}
             className='mySwiper lg:w-[40%] w-[90%] lg:mt-14'

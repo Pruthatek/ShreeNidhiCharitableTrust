@@ -97,7 +97,7 @@ const PhotoGallery = () => {
             <div className="relative group" onClick={() => handleImageClick(index, photo)}>
 
               <img src={photo.img} alt=""
-                className="md:w-[431px] md:h-[275px] w-full h-[230px] object-cover  "/>
+                className="md:w-[431px] md:h-[275px] w-full h-[230px]   "/>
               {/* Overlay on hover */}
               <div
                className={`
@@ -140,7 +140,7 @@ const PhotoGallery = () => {
               <img
                 src={selectedImage.img}
                 alt='Enlarged'
-                className='md:w-[100%] h-[500px] object-contain rounded-xl mx-auto'
+                className='md:w-[100%] w-[90%] h-[500px] object-contain rounded-xl mx-auto'
               />
             </div>
           </div>

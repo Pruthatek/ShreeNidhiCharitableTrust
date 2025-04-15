@@ -2,6 +2,7 @@ import React, { useEffect } from 'react'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { Link } from 'react-router-dom';
+import { motion } from 'framer-motion';
 
 const Nachiketa = () => {
     useEffect(() => {
@@ -15,11 +16,34 @@ const Nachiketa = () => {
       const handleClick = () => {
         window.scrollTo(0, 0);
       };
+
+      const fadeDown = {
+        hidden: { opacity: 0, y: -30 },
+        visible: { opacity: 1, y: 0 },
+      };
+      
+      const fadeRight = {
+        hidden: { opacity: 0, x: -50 },
+        visible: { opacity: 1, x: 0 },
+      };
+      
+      const fadeInFromLeftTop = {
+        hidden: { opacity: 0, x: -40, y: -40 },
+        visible: { opacity: 1, x: 0, y: 0 },
+      };
   return (
     <div className='w-full bg-white h-fit mt-4 py-10 '>
 
         <div className='flex flex-col items-center justify-center'>
-          <p data-aos="fade-down" className='font-semibold text-[13px] text-[#626262] uppercase font-montserrat'>Gurukul</p>  
+        <motion.p
+          variants={fadeDown}
+          initial="hidden"
+          whileInView="visible"
+          transition={{ duration: 0.6 }}
+          className='font-semibold text-[13px] text-[#626262] uppercase font-montserrat'
+        >
+          Gurukul
+        </motion.p>  
           <p className='font-normal  lg:text-[33px] md:text-[28px] text-[22px] text-[#A3364E] text-center font-alata'>Nachiketa Vidya Sansthan Gurukul</p>
           <img src="/assets/design.svg" className='md:w-[400px] w-[200px] '/>
         </div>
@@ -44,19 +68,27 @@ const Nachiketa = () => {
                </div>
 
               <Link to="/gurukul" onClick={handleClick}>
-              <div className='overflow-hidden'>
-
-              
-<p data-aos="fade-right" data-aos-delay="300" className='font-semibold text-[16px] text-[#A3364E] ml-6 mt-3 '>Know More</p>
-</div>
+              <motion.p
+              variants={fadeRight}
+              initial="hidden"
+              whileInView="visible"
+              transition={{ duration: 0.6, delay: 0.3 }}
+              className='font-semibold text-[16px] text-[#A3364E] ml-6 mt-3'
+            >
+              Know More
+            </motion.p>
                </Link>
             </div>
 
-            <div className='lg:w-[50%] w-[90%] flex justify-center overflow-hidden '>
-
-               <img src="/assets/gurukul.svg" className='IMG ' data-aos="fade-down-left"/>
-
-            </div>
+            <motion.div
+          className='lg:w-[50%] w-[90%] flex justify-center overflow-hidden'
+          variants={fadeInFromLeftTop}
+          initial="hidden"
+          whileInView="visible"
+          transition={{ duration: 0.8 }}
+        >
+          <img src="/assets/gurukul.svg" className='IMG' />
+        </motion.div>
 
         </div>
       
