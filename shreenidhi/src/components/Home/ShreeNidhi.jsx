@@ -55,7 +55,7 @@ const ShreeNidhi = () => {
   whileInView={{ rotateY: 0, opacity: 1 }}
   transition={{ duration: 0.8, ease: "easeOut" }}
 >
-  <img src="/assets/pragyan.png" className='IMG' />
+  <img src="/assets/pragyanImg.svg" className='IMG border-[10px] rounded-[14px] border-white shadow-lg ' />
 </motion.div>
 
 

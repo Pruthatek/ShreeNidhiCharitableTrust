@@ -11,12 +11,18 @@ import ShradhaPublication from "./components/ShradhaPublication/ShradhaPublicati
 import Founders from "./components/Founders/Founders";
 import PhotoGallery from "./components/PhotoGallery/PhotoGallery";
 import Contact from "./components/Contact/Contact";
+import { Helmet } from 'react-helmet';
 
 function App() {
 
 
   return (
     <>
+     <Helmet>
+        <title>Shree Nidhi Charitable Trust</title>
+        <meta name="keywords" content="charity, social work, community, non-profit, volunteering" />
+        <meta name="description" content="Welcome to our organization dedicated to social welfare and community services." />
+      </Helmet>
     <BrowserRouter>
     <Navbar/>
       <Routes>

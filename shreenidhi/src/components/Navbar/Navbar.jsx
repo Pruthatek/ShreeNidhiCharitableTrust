@@ -92,7 +92,7 @@ const Navbar = () => {
   return (
 
     <>
-    <div className="lg:fixed lg:block hidden top-0 left-0 w-full z-50 font-poppins">
+    <div className="xl:fixed xl:block hidden top-0 left-0 w-full z-50 font-poppins">
 
         <div className="relative">
           <Link to="/" onClick={handleClick}>         
@@ -125,7 +125,7 @@ const Navbar = () => {
       
     </div>
 
-    <div className='fixed lg:hidden bg-white shadow-md h-[90px] px-5 top-0 left-0 w-screen flex justify-between items-center z-50 font-poppins'>
+    <div className='fixed xl:hidden bg-white shadow-md h-[90px] px-5 top-0 left-0 w-screen flex justify-between items-center z-50 font-poppins'>
        
     <Link to="/" onClick={handleClick}>
        <img src="/assets/Logo.svg" className='w-[65px] h-[65px] '/>
@@ -134,6 +134,7 @@ const Navbar = () => {
 
         <Link to="/achievements" onClick={handleClick}>
         <p className=' font-normal text-[14px]  font-poppins text-[#101010] ' >Achievements</p>
+        
         </Link>
 
         <Link to="/contact-us" onClick={handleClick}>
@@ -173,7 +174,7 @@ const Navbar = () => {
       </div>
     </div>
   </div>
-)}
+     )}
 
 
     </>
